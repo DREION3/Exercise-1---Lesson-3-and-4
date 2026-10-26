@@ -1,0 +1,75 @@
+# Quesstion 1
+#Arithmetic and Assignment Operators
+#* Add 3 to x using the += operator
+x = 5  
+x += 3
+#* Multiply y by 2 using the *= operator
+y = 4  
+y *= 2
+#* Divide x by y and store the result in a variable called 'result'
+#Variable
+result = x / y
+result =3/2
+#print
+print(f"The value of 'result' is: {result}")
+
+#Question 2
+#Comparison and Logical Operators
+# * Create a condition that checks if a is greater than b
+a = 10  
+#* Create a condition that checks if b is even (hint: use the modulus operator)
+b = 6       
+is_even = b % 2 == 0
+#* Create a condition that checks if c is less than or equal to a
+c = 8
+is_less_or_equal = c <= a
+#* Combine the above conditions using logical operators to create a 'final_condition'
+final_condition = (a > b) or (is_even and is_less_or_equal)
+#print
+print(f"The value of 'final_condition' is: {final_condition}")
+
+
+#Question 3 
+#Conditional Statements
+#* Ask the user to input a test score (0-100) and store it in
+#Score 
+score = int(input("Enter your test score (0-100): "))
+#* Implement a grading system using if-elif-else statements:
+if score >= 90:
+    grade = 'A'
+elif score >= 80:
+    grade = 'B'
+elif score >= 70:
+    grade = 'C'
+elif score >= 60:
+    grade = 'D'
+else:
+    grade = 'F'
+    #Print
+print(f"Your grade is: {grade}")
+
+#Question 4
+#Combining Operators and Conditionals
+#* Ask the user to input two numbers and store them in variables 'num1' and 'num2'
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+#* Ask the user to input an operation (+, -, *, /) and store it in
+operation = input("Enter an operation (+, -, *, /): ")
+#* Use conditional statements to perform the chosen operation on num1 and num2
+if operation == '+':
+    result = num1 + num2
+elif operation == '-':
+    result = num1 - num2
+elif operation == '*':
+    result = num1 * num2
+elif operation == '/':
+    # Handle the case of division by zero
+    if num2 != 0:
+        result = num1 / num2
+    else:
+        result = "Error: Division by zero is not allowed."
+        #Print
+print(f"The result of the operation is: {result}")
+
+
+
